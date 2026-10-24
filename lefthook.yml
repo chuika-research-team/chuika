@@ -1,6 +1,10 @@
 pre-commit:
   parallel: false
   commands:
+    strip-notebooks:
+      glob: "*.ipynb"
+      run: uvx nbstripout {staged_files}
+      stage_fixed: true
     lint:
       glob: "*.py"
       run: uv run ruff check --fix {staged_files}
