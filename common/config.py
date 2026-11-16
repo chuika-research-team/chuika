@@ -17,12 +17,12 @@ class Config(BaseSettings):
     POSTGRES_URL: str
 
     # Параметры приложения
-    #BACKEND_PORT: int = 8000
+    # BACKEND_PORT: int = 8000
     LOG_LEVEL: str = "INFO"
 
-    #LLM_BASE_URL: str = "http://localhost:8000/v1"
-    #MODELS_STORAGE_DIR: str = "/data/models"
-    #PREDICTION_TIMEOUT_SEC: int = 240
+    # LLM_BASE_URL: str = "http://localhost:8000/v1"
+    # MODELS_STORAGE_DIR: str = "/data/models"
+    # PREDICTION_TIMEOUT_SEC: int = 240
 
 
 config = Config()
