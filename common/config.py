@@ -9,8 +9,15 @@ class Config(BaseSettings):
     )
 
     # Параметры БД
+    POSTGRES_HOST: str = "localhost"
+    POSTGRES_PORT: int = 5432
+    POSTGRES_USER: str
+    POSTGRES_DB: str
+    POSTGRES_PASSWORD: str
     POSTGRES_URL: str
-    BACKEND_PORT: int = 8000
+
+    # Параметры приложения
+    #BACKEND_PORT: int = 8000
     LOG_LEVEL: str = "INFO"
 
     #LLM_BASE_URL: str = "http://localhost:8000/v1"
