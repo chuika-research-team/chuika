@@ -1,0 +1,21 @@
+fullnameOverride: "chuika-postgresql"
+
+auth:
+  username: "chuika"
+  database: "chuika"
+  existingSecret: "chuika-secret"
+  secretKeys:
+    adminPasswordKey: "POSTGRES_PASSWORD"
+    userPasswordKey: "POSTGRES_PASSWORD"
+
+primary:
+  persistence:
+    enabled: true
+    size: 10Gi
+  resources:
+    requests:
+      cpu: 256m
+      memory: 256Mi
+    limits:
+      cpu: 512m
+      memory: 512Mi
